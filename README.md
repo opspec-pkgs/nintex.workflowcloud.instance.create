@@ -27,5 +27,5 @@ op:
     workflowId:
     workflowToken:
   outputs:
-    fileToken:
+    instanceToken:
 ```
