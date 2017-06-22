@@ -26,4 +26,6 @@ op:
     baseUrl:
     workflowId:
     workflowToken:
+  outputs:
+    fileToken:
 ```
