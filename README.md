@@ -1,5 +1,5 @@
 # problem statement
-uploads a package to gemfury
+creates a nintex workflowcloud workflow instance
 
 # example usage
 
@@ -23,7 +23,7 @@ opctl run github.com/opspec-pkgs/nintex.workflowcloud.instance.create#VERSION
 op:
   pkg: { ref: github.com/opspec-pkgs/nintex.workflowcloud.instance.create#VERSION }
   inputs: 
-    apiToken:
-    username:
-    package:
+    baseUrl:
+    workflowId:
+    workflowToken:
 ```
