@@ -15,7 +15,7 @@ inputs:
       description: token for a nintex workflowcloud external start workflow
       isSecret: true
 outputs:
-  WORKFLOW_INSTANCE_TOKEN:
+  instanceToken:
     string:
       description: token for the created workflow instance
 run:
@@ -28,4 +28,4 @@ run:
       workflowToken:
     files: { /cmd.sh }
     stdOut:
-      WORKFLOW_INSTANCE_TOKEN=: WORKFLOW_INSTANCE_TOKEN
+      instanceToken=: instanceToken
