@@ -9,7 +9,7 @@ statusCode=$(curl \
     --output \
     /instanceToken \
     --write-out "%{http_code}" \
-    -X POST "${baseUrl}/api/v1/workflow/published/${workflowId}/instances/create?token=${workflowToken}")
+    -X POST "$url")
 
 if test "$statusCode" -ne 201; then
 echo "$(cat /instanceToken)"
