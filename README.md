@@ -23,9 +23,7 @@ opctl run github.com/opspec-pkgs/nintex.workflowcloud.instance.create#VERSION
 op:
   pkg: { ref: github.com/opspec-pkgs/nintex.workflowcloud.instance.create#VERSION }
   inputs: 
-    baseUrl:
-    workflowId:
-    workflowToken:
+    url:
   outputs:
     instanceToken:
 ```
