@@ -9,6 +9,7 @@ outputs:
   instanceToken:
     string:
       description: token for the created workflow instance
+icon: /icon.svg
 version: 1.0.0
 run:
   container:
