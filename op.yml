@@ -10,13 +10,13 @@ outputs:
     string:
       description: token for the created workflow instance
 icon: /icon.svg
-version: 1.0.0
+version: 1.0.1
 run:
   container:
     image: { ref: 'opspecpkgs/nintex.workflowcloud.instance.create:1.0.0' }
     cmd: [ /cmd.sh ]
     envVars:
       url:
-    files: { /cmd.sh }
-    stdOut:
-      instanceToken=: instanceToken
+    files:
+      /cmd.sh:
+      /instanceToken: $(instanceToken)
