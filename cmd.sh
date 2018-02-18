@@ -2,8 +2,6 @@
 
 set -e
 
-touch /instanceToken
-
 statusCode=$(curl \
     --silent \
     --output \
@@ -15,4 +13,3 @@ if test "$statusCode" -ne 201; then
 echo "$(cat /instanceToken)"
 exit 1
 fi
-echo "instanceToken=$(cat /instanceToken)"
